@@ -1,0 +1,167 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0fbff;
+}
+.container {
+  max-width: 96%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+/*Navbar Styling */
+#nav-bar {
+  position: fixed;
+  top:0;
+  width:100%;
+}
+
+#nav-links {
+  overflow:hidden;
+  top: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+  font-family:'Roboto',sans-serif;
+  height: 60px;
+}
+
+#nav-bar img {
+  display: flex;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  padding: 10px;
+}
+
+
+
+ li {
+   list-style: none;
+ }
+
+ li:hover {
+   background-color: #006080;
+ }
+/*Media to adapt navbar to different screens */
+/* Medium sized screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small-sized screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+#nav-links a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+#nav-links:a hover {
+  background: #1565C0;
+}
+
+/*Form and elements from the form styling */
+#form {
+  max-width: 35%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form > h3 {
+  font-family:'Roboto',sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+#email {
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color: deepskyblue;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+#submit:hover {
+  background-color: #006080 ;
+}
+
+/* Video Box styling */
+#videoBox {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+/* Styling the flexbox content table */
+.flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.flex-row-container > .flex-row-box {
+  flex: 1 1 30%; /*grow | shrink | basis */
+  height: 80%;
+}
+
+.flex-row-box {
+  background-color: #ccf2ff;
+  border: 3px solid deepskyblue;
+  margin: 15px;
+}
+
+
+.flex-row-box > h4 {
+  margin: 10px;
+  text-align: center;
+  font-family:'Roboto',sans-serif;
+}
+
+.flex-row-box > p {
+  padding: 10px;
+  font-family:'Roboto',sans-serif;
+}
+
+.ex-img {
+  text-align: center;
+  margin: 10px;
+}
+
+.ex-img img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/*Footer*/
